@@ -1,0 +1,439 @@
+/*Navigation Bar*/
+        .navBar {
+            top: 0;
+            left: 0;
+            margin: 0;
+            position: absolute;
+            width: 100vw;
+            max-width: 100%;
+            height: 94px;
+            z-index: 1;
+        }
+
+        .navTitle {
+            display: none;
+            color: #14222B;
+            position: relative;
+            text-align: left;
+            padding: 0px 0px 0px 20px;
+            font-size: 24pt;
+            z-index: 3;
+            margin-right: auto;
+            margin-left: 79px;
+            top: 6px;
+        }
+
+        .navTitle a {
+            text-decoration: none;
+            color: #14222B;
+        }
+
+        #navTitlemob {
+            display: block;
+            font-size: 16pt;
+            line-height: 18pt;
+            top: -12px;
+            padding: 0px 0px 0px 0px;
+            width: 110px;
+            z-index: 3;
+        }
+
+        .IMFTlogo {
+            display: block;
+            position: relative;
+            top: 10px;
+            width: 60px;
+            margin: 0px 0px 0px 10px;
+            float: left;
+            z-index: 4;
+        }
+
+        .navWrapper {
+            align-self: right;
+        }
+
+        .text-navWrapper {
+            display: none;
+        }
+
+       
+
+/*Menu Styles*/
+    .navWrapper, .nav, .menu li {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #ffffff;
+        padding: none;
+        border-radius: 2px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .menu {
+        position: relative;
+        left: -15%;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        overflow: hidden;
+        display: none;
+    }
+
+    .nav input:checked ~ .menu {
+        width: 100vw;
+        max-width: 100%;
+        display: inline-block;
+    }
+
+    .menu li {
+        list-style: none;
+        margin: 10px 10px 50px 0px;
+        line-height: 10pt;
+        align-content: left;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 16pt;
+        font-weight: 400;
+    }
+
+    .menu li a:hover {
+        color: #DBC182;
+        transition: 0.1s;
+    }
+
+    /*USE AN ASYMPTOTE on margin height value TO GET SMOOTH SPACING ACROSS BPs*/
+    #menu-foot {
+        float: left;
+        height: 10px;
+        background: #DBC182;
+        border: none;
+        position: relative;
+        width: 80%;
+        margin: 90% 0px 0px 0px;
+    }
+
+    /*margin: 70% 0px 0px 0px;*/
+
+    @media only screen and (min-width: 500px) {
+        .nav input:checked ~ .menu {
+            width: 100vw;
+            max-width: 100%;
+        }
+        .menu li {
+            list-style: none;
+        }
+
+        #menu-foot {
+            width: 80%;
+            margin: 40% 0px 0px 0px;
+        }  
+
+    }
+
+/*Nav Icon*/
+    .nav input {
+        position: relative;
+        right: 0px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        opacity: 0;
+    }
+    
+    .nav input:checked  {
+        position: relative;
+        height: 100vh;
+        max-height: 100%;
+    }
+
+    /*.nav :not(input:checked) {
+        transition: 0.35s;
+    }*/
+
+    .nav span {
+        position: absolute;
+        top: 24px;
+        right: 12px;
+        width: 30px;
+        height: 2px;
+        border-radius: 0px;
+        background-color: #14222B;
+        pointer-events: none;
+        z-index: 5;
+        transition-duration: 0.5s;
+    }
+
+
+    .nav input:checked ~ span {
+        background-color: #14222B;
+    }
+
+    .nav span:nth-child(2) {
+        transform: translateY(-8px);
+        height: 5px;
+    }
+
+    .nav input:checked ~ span:nth-child(2) {
+        transform: translateY(0) rotate(-45deg);
+        height: 5px;
+    }
+    .nav span:nth-child(3) {
+        transform: translateY(8px);
+    }
+
+    .nav input:checked ~ span:nth-child(3) {
+        transform: translateY(0) rotate(45deg);
+        background-color: #DBC182;
+        z-index: 4;
+    }
+
+    input:checked {
+        position: absolute;
+        right: -85%;
+        width: 200px;
+    }
+
+/*Close Nav Icon*/
+
+/*Tablet Breakpoint*/
+ @media only screen and (min-width: 760px){
+
+    #navTitlemob {
+        display: none;
+    }
+
+    .navWrapper {
+        display: none;
+    }
+    
+    .navBar {
+        height: 94px;
+    }
+
+    .nav span {
+        top: 38px;
+    }
+
+    .navTitle {
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin-left: 85px;
+        margin-right: auto;
+        font-size: 24pt;
+        text-align: left;
+        padding: 0px 0px 0px 0px;
+        line-height: 0pt;
+    }
+
+    .IMFTlogo {
+        display: block;
+        position: relative;
+        top: 10px;
+        width: 60px;
+        margin: 0px 0px 0px 10px;
+        float: left;
+        z-index: 4;
+        transition: 0.5s;
+    }
+
+    .IMFTlogo:hover {
+        text-decoration: none;
+        filter: drop-shadow(2px 8px 8px #b2bdc5);
+        top: 7px;
+        transition: 0.5s;
+    }
+
+    #menu-foot {
+        float: left;
+        height: 5px;
+        background: #DBC182;
+        position: relative;
+        width: 75%;
+        margin: 45% 0px 0px 0px;
+    }
+
+}
+/*Tablet Breakpoint Close*/
+
+/*Text Nav*/
+@media only screen and (min-width: 760px) {
+    .text-navWrapper {
+        display: block;
+        position: absolute;
+        top: 50px;
+    }
+
+    .text-nav {
+        position: absolute;
+        padding: 0px 10px 10px 5px;
+        transition: 0.5s;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+    .text-navWrapper, .text-nav, .textMenu {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        top: 22px;
+    }
+
+    .textMenu li {
+        list-style: none;
+        margin: 0 10px;
+    }
+
+    .textMenu li a {
+        text-decoration: none;
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 12pt;
+        font-weight: 400;
+        transition: 0.5s;
+        line-height: 30pt;
+    }
+
+    .textMenu li a:hover {
+        color: #DBC182;
+        transition: 0.1s;
+    }
+}
+/*Text Nav Close*/
+/*Menu Styles Close*/
+
+/*Body Settings*/
+    a {
+        color: inherit;
+        background-color: inherit;
+        text-decoration: inherit;
+        cursor: pointer;
+    }
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    
+    body {
+        position: relative;
+        font-family: 'Fraunces', serif;
+        font-weight: 400;
+        color: #14222B;
+        background-color: #ffffff;
+        margin: 0px 0px 0px 0px;
+        min-height: 100vh;
+    }
+
+    #bodyContent {
+        padding-top: 94px;
+        padding-bottom: 50px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .bodyText {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #14222B;
+    }
+
+    .goldBar {
+        border: none;
+        height: 10px;
+        background-color: #DBC182;
+    }
+
+  
+/*Menu Switch*/
+    @media only screen and (min-width: 760px) {
+        .text-navWrapper {
+            display: inline;
+        }
+    }
+/*Menu Switch Close*/
+
+/*Footer Classes*/
+
+
+#content-wrap {
+    min-height: calc(100% - 144px); // 160px should be the height of your header + height of footer
+}
+
+/* Use only when disparity between header heights across breakpoints.
+
+@media only screen and (min-width: 760px) {
+    #content-wrap {
+        min-height: calc(100% - 144px); // 160px should be the height of your header + height of footer
+    }
+}
+*/
+
+.footer {
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    max-width: 100%;
+    bottom: 0;
+    z-index: 10;
+}
+
+.admintext {
+    position: absolute;
+    text-align: left;
+    align-self: center;
+    color: #14222B;
+    font-size: 12pt;
+    line-height: 12pt;
+    top: 30%;
+    left: 10px;
+    margin: 0px 0px 0px 0px;
+    transition: 0.1s;
+}
+
+.admintext:hover {
+    color: #DBC182;
+    transition: 0.1s;
+}
+
+.icons {
+    position: absolute;
+    align-content: right;
+    display: flex;
+    min-width: 75px;
+    top: 12px;
+    right: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.icon {
+    fill: #14222B;
+    margin: auto 15px auto 15px;
+}
+
+.icon:hover {
+    fill: #DBC182;
+    transition: 0.1s;
+}
+
+
+ /*/Footer Classes*/

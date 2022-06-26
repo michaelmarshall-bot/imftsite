@@ -1,0 +1,235 @@
+<!DOCTYPE html lang="eng">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="IMFT" content="Ibbotson Memorial Field Trust">
+    <meta name="low,bradfield,sheffield,yorkshire,england,united kingdom,britain,heritage,field,charity,sports,tennis,bowls,cricket," content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google/Android Favicon Meta-->
+    <meta name="theme-color" content="#ffffff">
+    <!--Standard Favicon-->
+    <link rel="icon" href="favicon/favicon-modepref.svg" type="image/svg+xml">
+     <!--iOS Favicons-->
+     <link rel=”mask-icon” href="favicon/favicon-modepref.svg" color="#000000">
+     <link rel="apple-touch-icon" href="favicon/iOS-touch-icon.png">
+     <!--Google/Android Favicon-->
+     <link rel="manifest" href="manifest.json">
+    <title>Ibbotson Memorial Field Trust</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700;1,9..144,900&family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+
+    .flavourText {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    @keyframes flavourAnim {
+        0% {font-variation-settings: 'wght' 800;letter-spacing: 1;}
+        100% {font-variation-settings: 'wght' 400; letter-spacing: 2px;}
+    }
+
+    @keyframes flavourAnim2 {
+        0% {font-variation-settings: 'wght' 800;letter-spacing: -2px;}
+        100% {font-variation-settings: 'wght' 400; letter-spacing: 1;}
+    }
+
+    .flavourAnimation1 {
+        animation-delay: 6s;
+        letter-spacing: 1;
+        font-weight: 600;
+        animation: flavourAnim 6s alternate 2;
+    }
+
+    .flavourAnimation2 {
+        animation-delay: 6s;
+        letter-spacing: 1;
+        font-weight: 300;
+        animation: flavourAnim2 6s alternate-reverse 2;
+    }
+
+  
+    .charityNo {
+        font-style: italic;
+    }
+
+    .goldBar {
+        margin: 8% 0px 8% 0px;
+    }
+
+    .locationIcon {
+        position: relative;
+        top: 5px;
+        fill: #14222B;
+        transition: 0.1s;
+    }
+
+    .btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 20px;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-style: italic;
+        text-align: center;
+        color: #ffffff;
+        font-size: 40px;
+        background: #14222B;
+        padding: 8px 10px 8px 10px;
+        text-decoration: none;
+        box-shadow: none;
+        position: relative;
+        top: 0;
+        transition: 0.5s;
+    }
+
+    .btn:hover {
+        background: #14222B;
+        text-decoration: none;
+        filter: drop-shadow(2px 8px 8px #b2bdc5);
+        position: relative;
+        top: -4px;
+        transition: 0.5s;
+    }
+
+@media only screen and (min-width: 760px) {
+    #bodyContent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -300px 0 0 -450px;
+        max-width: 800px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column {
+        min-width: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flavourText {
+        align-self: flex-start;
+        max-width: 920px;
+    }
+
+    .cta {
+        align-self: flex-end;
+        padding: 0px 0px 8px 0px;
+        width: 800px;
+    }
+
+    .flavourText {
+        align-self: flex-start;
+        text-align: right;
+    }
+
+    .charityNo {
+        text-align: right;
+        align-self: flex-end;
+    }
+
+    .locationText {
+        text-align: left;
+        transition: 0.1s;
+    }
+
+    .locationText:hover .locationIcon {
+        fill: #DBC182;
+        transition: 0.1s;
+    }
+
+    .goldBar {
+        width: 300px;
+        transform: rotate(90deg);
+        align-self: center;
+        position: relative;
+        top: 170px;
+        margin: 0px;
+    }
+
+}
+    </style>
+</head>
+<body id="body">
+    <div class="navBar">
+        <a href="index.html">
+            <img class="IMFTlogo" src="assets/imft-nav-logo.png"/>
+        </a>
+            <ul class="navTitle"><a href="">Ibbotson Memorial Field Trust</a></ul>
+            <ul class="navTitle" id="navTitlemob"><a href="">Ibbotson <br> Memorial<br> Field Trust</a></ul>
+        <!-- Nav -->
+        <div class="navWrapper">
+            <div class="nav">
+            <input id="checkbox" type="checkbox"/>
+                <span></span>
+                <span></span>
+                <div class="menu">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Donate</a></li>
+                    <li><a href="">History</a></li>
+                    <hr id="menu-foot">
+                </div>
+            </div>
+        </div>
+        <div class="text-navWrapper">
+            <div class="text-nav">
+                <div class="textMenu">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Donate</a></li>
+                    <li><a href="">History</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Body Content-->
+<div id="bodyContent">
+    <div class="column flavour">
+        <p class="flavourText"> A place to breathe, to <span class="flavourAnimation1">relax</span>, to make memories and <span class="flavourAnimation1">enjoy</span>, a place to <span class="flavourAnimation2">respect</span>, to keep pristine and to <span class="flavourAnimation2">protect</span>.</p>
+        <p class="bodyText charityNo">Reg. Charity No.: 523724</p>
+    </div>
+    <div class="column">
+        <hr class="goldBar">
+    </div>
+    <div class="column cta">
+        <a href="https://goo.gl/maps/eHqDzPeG2aGEE8vA6" target="_blank">  
+            <p class="bodyText charityNo locationText"><svg class="locationIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg> Low Bradfield, South Yorkshire. UK.</p>
+        </a>
+        <p class="bodyText">Spare a thought for the foresight and the generosity of those who gifted this living legacy.</p>
+        <a href="">
+            <div class="btn">
+                <span>Donate</span>
+            </div>
+        </a>
+    </div>
+</div>
+<!--/Body Content-->
+    <div class="footer">
+        <a rel="termsofuse.html">
+            <p class="admintext">©2022 | 
+                Terms of Use
+            </p>
+        </a>
+        <div class="icons">
+            <a href="mailto:">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+            </a>
+            <a href="">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21.6" width="24" height="24"><path class="st0" d="M7,14.1l1.5-0.7c1.8-0.8,2.9-0.3,4.3,0.2c1.7,0.7,2.4,0.9,3.1,1.2c1.3,0.5,0.7,2.2-0.6,1.8
+                    c-0.8-0.2-2.8-0.8-3.4-0.9c-0.6-0.2-0.9,0.6-0.3,0.8c1.1,0.4,2.7,0.8,3.5,1c0.8,0.2,1.3-0.1,1.9-0.6c0.9-0.7,3-2.9,3-2.9
+                    c0.8-0.8,2-0.1,2,0.7c0,0.2-0.1,0.5-0.3,0.7c-2.3,2.8-3.1,3.6-4.6,5.2c-0.6,0.7-1.3,1-2.2,1c-0.4,0-0.9-0.1-1.4-0.2
+                    C11.7,20.8,9.3,20,7,19.8C7,19.8,7,14.1,7,14.1z M6,20.6H2v-8h4V20.6z"/><path d="M15.5,2c-1.8-3.1-6.9-2.2-6.9,1.7c0,2.7,3.2,5.4,6.9,9.1c3.7-3.7,6.9-6.4,6.9-9.1C22.4-0.2,17.3-1.1,15.5,2z"/>
+                </svg>
+            </a>
+        </div>
+    </div> 
+</body>
+</html>
