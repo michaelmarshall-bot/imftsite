@@ -24,6 +24,8 @@
     <style>
 
     .flavourText {
+        font-family: 'Fraunces', serif;
+        color: #14222B;
         font-weight: 300;
         font-size: 32px;
         line-height: 39px;
@@ -58,20 +60,13 @@
         font-style: italic;
     }
 
-    .goldBar {
+    .goldBarLP {
         margin: 8% 0px 8% 0px;
-    }
-
-    .locationIcon {
-        position: relative;
-        top: 5px;
-        fill: #14222B;
-        transition: 0.1s;
     }
 
     .btn {
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         -webkit-border-radius: 28;
         -moz-border-radius: 28;
         border-radius: 20px;
@@ -99,7 +94,29 @@
         transition: 0.5s;
     }
 
-@media only screen and (min-width: 760px) {
+    .goldBarLP {
+        border: none;
+        height: 10px;
+        background-color: #DBC182;
+    }
+
+@media only screen and (min-width: 430px) {
+
+    #bodyContent {
+       max-width: 420px;
+       position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -410px 0 0 -220px;
+        max-width: 420px;
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 910px) {
     #bodyContent {
         position: absolute;
         top: 50%;
@@ -123,11 +140,16 @@
 
     .cta {
         align-self: flex-end;
-        padding: 0px 0px 8px 0px;
+        padding: 0px 0px 22px 0px;
         width: 800px;
     }
 
+    .cta p:nth-child(2) {
+        padding: 0px 0px 18px 0px;
+    }
+
     .flavourText {
+        font-family: 'Fraunces',
         align-self: flex-start;
         text-align: right;
     }
@@ -139,15 +161,9 @@
 
     .locationText {
         text-align: left;
-        transition: 0.1s;
     }
 
-    .locationText:hover .locationIcon {
-        fill: #DBC182;
-        transition: 0.1s;
-    }
-
-    .goldBar {
+    .goldBarLP {
         width: 300px;
         transform: rotate(90deg);
         align-self: center;
@@ -156,17 +172,25 @@
         margin: 0px;
     }
 
+    .btn {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
 }
     </style>
 </head>
 <body id="body">
     <div class="navBar">
+        <header>
         <a href="index.html">
             <img class="IMFTlogo" src="assets/imft-nav-logo.png"/>
         </a>
             <ul class="navTitle"><a href="">Ibbotson Memorial Field Trust</a></ul>
             <ul class="navTitle" id="navTitlemob"><a href="">Ibbotson <br> Memorial<br> Field Trust</a></ul>
+        </header>
         <!-- Nav -->
+        <nav>
         <div class="navWrapper">
             <div class="nav">
             <input id="checkbox" type="checkbox"/>
@@ -189,6 +213,7 @@
                 </div>
             </div>
         </div>
+        </nav>
     </div>
 <!--Body Content-->
 <div id="bodyContent">
@@ -197,11 +222,11 @@
         <p class="bodyText charityNo">Reg. Charity No.: 523724</p>
     </div>
     <div class="column">
-        <hr class="goldBar">
+        <hr class="goldBarLP">
     </div>
     <div class="column cta">
         <a href="https://goo.gl/maps/eHqDzPeG2aGEE8vA6" target="_blank">  
-            <p class="bodyText charityNo locationText"><svg class="locationIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg> Low Bradfield, South Yorkshire. UK.</p>
+            <p class="bodyText charityNo locationText"><svg class="locationIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg> Low&nbsp;Bradfield, South&nbsp;Yorkshire.&nbsp;UK.</p>
         </a>
         <p class="bodyText">Spare a thought for the foresight and the generosity of those who gifted this living legacy.</p>
         <a href="">
@@ -212,7 +237,7 @@
     </div>
 </div>
 <!--/Body Content-->
-    <div class="footer">
+    <footer class="footer">
         <a rel="termsofuse.html">
             <p class="admintext">©2022 | 
                 Terms of Use
@@ -230,6 +255,6 @@
                 </svg>
             </a>
         </div>
-    </div> 
+    </footer> 
 </body>
 </html>

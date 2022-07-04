@@ -41,7 +41,7 @@
         .IMFTlogo {
             display: block;
             position: relative;
-            top: 10px;
+            top: -10px;
             width: 60px;
             margin: 0px 0px 0px 10px;
             float: left;
@@ -317,21 +317,6 @@
 /*Menu Styles Close*/
 
 /*Body Settings*/
-    a {
-        color: inherit;
-        background-color: inherit;
-        text-decoration: inherit;
-        cursor: pointer;
-    }
-
-    p {
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-    }
-    
     body {
         position: relative;
         font-family: 'Fraunces', serif;
@@ -357,10 +342,166 @@
         color: #14222B;
     }
 
+    a {
+        color: inherit;
+        background-color: inherit;
+        text-decoration: inherit;
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: inherit;
+        background-color: inherit;
+        text-decoration: inherit;
+        cursor: pointer;
+    }
+
+    .bodyLink {
+        text-decoration: underline;
+    }
+
+    .bodyLink:visited {
+        color: rgb(95, 95, 95);
+    }
+
+    .bodyLink:hover {
+        color: #DBC182;
+    }
+
+    .bodyLink:active {
+        color: #DBC182;
+    }
+
+    h1 {
+       font-weight: 400;
+       font-size: 48px;
+       margin: 0px 10px 0px 0px;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .hideMob {
+        display: none;
+    }
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    #bodyContent ul {
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        list-style-type: circle;
+    }
+
+    #bodyContent li {
+        padding-bottom: 12px;
+    }
+
+    .dateSub {
+        font-weight: 600;
+    }
+
+    .locationIcon {
+        position: relative;
+        top: 5px;
+        fill: #14222B;
+        transition: 0.1s;
+    }
+
+    .locationText {
+        text-align: left;
+        transition: 0.1s;
+        font-style: italic;
+    }
+
+    .locationText:hover .locationIcon {
+        fill: #DBC182;
+        transition: 0.1s;
+    }
+
     .goldBar {
         border: none;
         height: 10px;
         background-color: #DBC182;
+        width: 234px;
+    }
+
+    .btt-link {
+        display: block;
+        text-decoration: none;
+        color: #14222B;
+        padding: 60px 10px 80px 10px;
+    }
+
+    .btt-link:hover {
+        color:#14222B;
+    }
+
+    .btt-text {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .arrow {
+        margin: auto;
+        width: 235px;
+    }
+
+    .arrowHead {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 13px solid #DBC182;
+        margin: 0px auto;
+    }
+
+    .arrowShaft {
+        height: 12px;
+        width: 10px;
+        background-color: #DBC182;
+        margin: 0px auto;
+    }
+
+/*body flex*/
+
+    .gridContainer {
+        max-width: 600px;
+        margin: 20px auto 0px auto;
+    }
+  
+    @media only screen and (min-width: 1020px) {
+        .gridContainer {
+            max-width: none;
+            margin-top: 2%;
+            display: grid; 
+            grid-template-columns: 1fr 600px 1fr; 
+            grid-template-rows: auto auto auto; 
+            gap: 0px 20px; 
+        }
+        
+        .dateSub {
+            font-weight: 400;
+        }
+
+        .hideMob {
+            display: block;
+        }
+
+        .hideDesk {
+            display: none;
+        }
     }
 
   
@@ -400,6 +541,8 @@
 .admintext {
     position: absolute;
     text-align: left;
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
     align-self: center;
     color: #14222B;
     font-size: 12pt;
@@ -427,7 +570,7 @@
 
 .icon {
     fill: #14222B;
-    margin: auto 15px auto 15px;
+    margin: auto 10px auto 10px;
 }
 
 .icon:hover {
