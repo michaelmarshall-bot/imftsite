@@ -375,7 +375,14 @@
     h1 {
        font-weight: 400;
        font-size: 48px;
+       line-height: 54px;
        margin: 0px 10px 0px 0px;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
     }
 
     h3 {
@@ -410,6 +417,18 @@
 
     .dateSub {
         font-weight: 600;
+    }
+
+    .imageAsset {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .imageAttri {
+        font-style: italic;
+        padding-bottom: 10px;
+        margin-top: 5px;
+        
     }
 
     .locationIcon {
