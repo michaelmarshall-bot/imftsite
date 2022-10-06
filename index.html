@@ -23,6 +23,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700;1,9..144,900&family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
 
+    /*Background Image*/
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .lp-image {
+        position:relative;
+        height: 0%;
+    }
+
+    @media only screen and (min-width: 910px) {
+        .lp-image {
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: -5;
+            background-image: url("/Users/michaelmarshall/Fork/imftsite/assets/Field.jpg");
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.1;
+        }
+    }
+    /*Bg Image Close*/    
+
     .flavourText {
         font-family: 'Fraunces', serif;
         color: #14222B;
@@ -107,7 +134,7 @@
        position: absolute;
         top: 50%;
         left: 50%;
-        margin: -410px 0 0 -220px;
+        margin: -410px 0 0 -225px;
         max-width: 420px;
     }
 
@@ -193,15 +220,15 @@
         <nav>
         <div class="navWrapper">
             <div class="nav">
-            <input id="checkbox" type="checkbox"/>
-                <span></span>
-                <span></span>
-                <div class="menu">
-                    <li><a href="about">About</a></li>
-                    <li><a href="https://bopp.app/link/1azmq">Donate</a></li>
-                    <li><a href="history">History</a></li>
-                    <hr id="menu-foot">
-                </div>
+                <input id="checkbox" type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <div class="menu">
+                        <li><a href="about">About</a></li>
+                        <li><a href="https://bopp.app/link/1azmq">Donate</a></li>
+                        <li><a href="history">History</a></li>
+                        <hr id="menu-foot">
+                    </div>
             </div>
         </div>
         <div class="text-navWrapper">
@@ -216,6 +243,7 @@
         </nav>
     </div>
 <!--Body Content-->
+<div class="lp-image hideMob"></div>
 <div id="bodyContent">
     <div class="column flavour">
         <p class="flavourText"> A place to breathe, to <span class="flavourAnimation1">relax</span>, to make memories and <span class="flavourAnimation1">enjoy</span>, a place to <span class="flavourAnimation2">respect</span>, to keep pristine and to <span class="flavourAnimation2">protect</span>.</p>

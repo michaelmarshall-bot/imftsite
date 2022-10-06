@@ -7,6 +7,7 @@
             top: 0;
             left: 0;
             margin: 0;
+            background-color: none;
             position: absolute;
             width: 100vw;
             max-width: 100%;
@@ -540,14 +541,14 @@
 
 
 #content-wrap {
-    min-height: calc(100% - 144px); // 160px should be the height of your header + height of footer
+    min-height: calc(100% - 144px); // 144px should be the height of the header + height of footer
 }
 
 /* Use only when disparity between header heights across breakpoints.
 
 @media only screen and (min-width: 760px) {
     #content-wrap {
-        min-height: calc(100% - 144px); // 160px should be the height of your header + height of footer
+        min-height: calc(100% - 144px); // 144px should be the height of your header + height of footer
     }
 }
 */
