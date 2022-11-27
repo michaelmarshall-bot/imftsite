@@ -14,19 +14,93 @@
      <link rel="apple-touch-icon" href="favicon/iOS-touch-icon.png">
      <!--Google/Android Favicon-->
      <link rel="manifest" href="manifest.json">
-    <title>About | Ibbotson Memorial Field Trust</title>
+    <title>Support Us | Ibbotson Memorial Field Trust</title>
     <!--Styles-->
     <link rel="stylesheet" href="styles.css">
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700;1,9..144,900&family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
+    <style> 
+
+    .btn {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 20px;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-style: italic;
+        text-align: center;
+        color: #ffffff;
+        font-size: 40px;
+        background: #14222B;
+        padding: 8px 10px 8px 10px;
+        text-decoration: none;
+        box-shadow: none;
+        position: relative;
+        top: 0;
+        transition: 0.5s;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn:hover {
+        background: #14222B;
+        text-decoration: none;
+        filter: drop-shadow(2px 8px 8px #b2bdc5);
+        position: relative;
+        top: -4px;
+        transition: 0.5s;
+    }
+
+    .stripeContainer {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 8px 0px 0px 0px;
+        position: relative;
+        top: 0;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stripeCert {
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 50%;
+    }
+
+    @media only screen and (min-width: 430px) {
+
+    .btn {
+        margin-top: 32px;
+    }
+    }
+
+    @media only screen and (min-width: 910px) {
+
+    .btn {
+        margin-top: 40px;
+    }
+
+    .stripeContainer {
+        padding: 8px 0px 8px 0px;
+        margin-bottom: 20px;
+    }
+
+    }
 
     .contactID {
         font-style: italic;
         font-weight: 500;
     }
+
+    
+
 
     </style>
 </head>
@@ -58,39 +132,45 @@
             <div class="text-navWrapper">
                 <div class="text-nav">
                     <div class="textMenu">
-                        <li><a href="about" style="color:#DBC182;">About</a></li>
+                        <li><a href="about">About</a></li>
                         <li><a href="contact">Contact</a></li>
                         <li><a href="history">History</a></li>
-                        <li><a href="support-us">Support Us</a></li>
+                        <li><a href="support-us" style="color:#DBC182;">Support Us</a></li>
                     </div>
                 </div>
             </div>
+            </nav>
         </nav>
     </div>
 <!--Body Content-->
 <div id="bodyContent">
     <div class="gridContainer">
         <div class="gridHeader">
-            <h1>About</h1>
-            <a href="https://goo.gl/maps/eHqDzPeG2aGEE8vA6" target="_blank">  
-                <p class="locationText"><svg class="locationIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg> Low&nbsp;Bradfield, South&nbsp;Yorkshire,&nbsp;UK.</p>
-            </a>
+            <h1>Donate</h1>
         </div>
         <div class="gridBody">
-            <p>Did you know?</p>
-            <ul>
-                <li>The Ibbotson Memorial Field is owned by a charitable Trust (Reg. Charity No. 523724)</li>
-                <li>The Field is self-governing and is not the responsibility of Bradfield Parish Council</li>
-                <li>The Trust was set up by the Ibbotson family on March 1st 1937</li>
-                <li>The Field has no fixed source of income and relies on volunteers, public donations and annual contributions paid by the Associations on the Field.</li>
-                <li>The Trustees and representatives from each Association form the Field Management Committee (FMC)</li>
-                <li>The Field falls within the Peak Park Conservation Area</li>
-                <li>The floral boxes along the boundary wall are contributed each year by Bradfield In Bloom</li>
-            </ul>
-            <p>Any <a class="bodyLink" href="support-us">support or donations</a> made by the general public are always very gratefully received. Please contact the <a class="bodyLink" href="mailto:administrator@ibbotsonmemorialfield.com" target="_blank">Secretary/Administrator</a> for details on how to donate a memorial bench or offer support as a volunteer.</p>
+            <a href="https://donate.stripe.com/aEU6rPgzZ7BK8EgaEE">
+                <div class="btn">
+                    <span>Donate</span>
+                </div>
+            </a>
+            <div class="stripeContainer">
+                 <div class="stripeCert">
+                    <img src="assets/Powered by Stripe - black.svg" alt="Powered by Stripe Certification" width="100px"></img>
+                </div>
+            </div>
+            <p>The Ibbotson Memorial Field is a voluntary organisation and has limited funds. By donating here you are supporting the maintenance and upkeep of the field. All donations are very gratefully received, thank you for your support.</p>
         </div>
         <div class="gridMargin"></div>
-        <div class="hideDesk hideTablet">
+        <div class="gridHeader">
+            <h1>Support Us</h1>
+        </div>
+        <div class="gridBody">
+            <p>The Ibbotson Memorial Field Trust is a voluntary organisation and works alongside Cricket, Tennis, Bowls, the Village Hall, and Bradfield in Bloom to maintain the field and its associated activities.</p>
+            <p>We are always keen to welcome anyone who may wish to help.  If you have some spare time and would like to get involved please get in touch by emailing:<br class="hideDesk"> <a class="bodyLink" href="mailto:administrator@ibbotsonmemorialfield.com" target="_blank">administrator@ibbotsonmemorialfield.com</a> <br class="hideDesk">or contact the individual activity groups.</p>
+        </div>
+        <div class="gridMargin"></div>
+        <div class="hideDesk">
         <div class="gridHeader"></div>
         <div class="gridBody">
             <div clas="btt-btn">
